@@ -13,6 +13,13 @@ for(let i=0; i< questions.length; i++){
         }
     })
 }
+// change img
+let pic = document.querySelector(".view");
+let picArr = ["https://i.ytimg.com/vi/Z5FzZ080-do/hqdefault.jpg","https://i.ytimg.com/vi/uoX5aKuspEE/hqdefault.jpg","https://d29mtkonxnc5fw.cloudfront.net/images/tzV1eXXdkLklpSD4qAxbWg_cover.jpg"]
+    setInterval(() =>{
+        let num=Math.floor(Math.random() * picArr.length);
+        pic.src= picArr[num];
+    },1000);
 // --------------------------------------------------------------------
 
 //  sign in validation
